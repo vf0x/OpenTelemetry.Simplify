@@ -35,7 +35,7 @@ builder.Services.AddGrpcReflection();
 builder.Services.AddGrpcHealthChecks()
                 .AddCheck("self", () => HealthCheckResult.Healthy());
 
-builder.Services.AddEubankOpenTelemetry(options =>
+builder.Services.AddSimplifyOpenTelemetry(options =>
 {
     options.ServiceName = "Sample";
     options.ServiceVersion = "1.0.0";
@@ -64,7 +64,7 @@ if (app.Environment.IsDevelopment())
 }
 // Configure the HTTP request pipeline.
 app.MapGrpcService<GreeterService>();
-app.UseEubankPrometheusScrapingEndpoint();
+app.UseOtelPrometheusScrapingEndpoint();
 app.MapGrpcHealthChecksService();
 app.MapGrpcReflectionService();
 app.UseMiddleware<MetricsMiddleware>();

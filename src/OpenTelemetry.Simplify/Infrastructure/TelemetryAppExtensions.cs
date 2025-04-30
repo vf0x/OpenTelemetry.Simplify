@@ -16,7 +16,7 @@ namespace OpenTelemetry.Simplify.Infrastructure
         /// Регистрирует Prometheus-сервер middleware на пути /metrics по умолчанию.
         /// Вызывается вручную пользователем после builder.Build().
         /// </summary>
-        public static IApplicationBuilder UseEubankPrometheusScrapingEndpoint(this IApplicationBuilder app)
+        public static IApplicationBuilder UseOtelPrometheusScrapingEndpoint(this IApplicationBuilder app)
         {
             // По сути обёртка над встроенным методом
             return app.UseOpenTelemetryPrometheusScrapingEndpoint();

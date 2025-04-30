@@ -13,7 +13,7 @@ namespace OpenTelemetry.Simplify.Infrastructure
 {
     public static class TelemetryExtensions
     {
-        public static IServiceCollection AddEubankOpenTelemetry(
+        public static IServiceCollection AddSimplifyOpenTelemetry(
             this IServiceCollection services,
             System.Action<TelemetryOptions> configure)
         {

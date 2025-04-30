@@ -8,7 +8,7 @@
 		<NoWarn>$(NoWarn);1591</NoWarn>
 
 		<PackageId>Otel.Simplify</PackageId>
-		<Version>1.0.0-rc.2</Version>
+		<Version>1.0.0</Version>
 		<Authors>Doskhan Danebekov</Authors>
 		<Company>Doskhan Labs</Company>
 		<Product>OpenTelemetry Simplify for .NET</Product>
