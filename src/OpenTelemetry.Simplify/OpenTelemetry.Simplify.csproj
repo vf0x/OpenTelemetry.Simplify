@@ -7,8 +7,8 @@
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<NoWarn>$(NoWarn);1591</NoWarn>
 
-		<PackageId>OpenTelemetry.Simplify</PackageId>
-		<Version>1.0.0</Version>
+		<PackageId>Otel.Simplify</PackageId>
+		<Version>1.0.0-rc.2</Version>
 		<Authors>Doskhan Danebekov</Authors>
 		<Company>Doskhan Labs</Company>
 		<Product>OpenTelemetry Simplify for .NET</Product>
@@ -18,6 +18,7 @@
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/vf0x/OpenTelemetry.Simplify</PackageProjectUrl>
 		<PackageIcon>icon.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -36,6 +37,7 @@
 		<PackageReference Include="Oracle.ManagedDataAccess.OpenTelemetry" Version="23.8.0" />
 		<PackageReference Include="System.Diagnostics.DiagnosticSource" Version="9.0.4" />
 		<None Include="icon.png" Pack="true" PackagePath="" />
+		<None Include="..\..\README.md" Pack="true" PackagePath="" />
 	</ItemGroup>
 
 </Project>
