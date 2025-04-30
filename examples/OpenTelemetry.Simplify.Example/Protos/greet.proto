@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+option csharp_namespace = "OpenTelemetry.Simplify.Example";
+
+import "google/api/annotations.proto";
+
+package OpenTelemetry.Simplify.V1;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply){
+    option (google.api.http) = {
+      post: "/v1/SayHello"
+      body: "*"
+    };
+  }
+  rpc HttpCall (HelloRequest) returns (HelloReply){
+    option (google.api.http) = {
+      post: "/v1/HttpCall"
+      body: "*"
+    };
+  }
+    rpc DbQuery (HelloRequest) returns (HelloReply){
+    option (google.api.http) = {
+      post: "/v1/DbQuery"
+      body: "*"
+    };
+  }
+    rpc CpuStress (HelloRequest) returns (HelloReply){
+    option (google.api.http) = {
+      post: "/v1/CpuStress"
+      body: "*"
+    };
+  }
+    rpc MemoryStress (HelloRequest) returns (HelloReply){
+    option (google.api.http) = {
+      post: "/v1/MemoryStress"
+      body: "*"
+    };
+  }
+    rpc RandomException (HelloRequest) returns (HelloReply){
+    option (google.api.http) = {
+      post: "/v1/RandomException"
+      body: "*"
+    };
+  }
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message HelloReply {
+  string message = 1;
+}

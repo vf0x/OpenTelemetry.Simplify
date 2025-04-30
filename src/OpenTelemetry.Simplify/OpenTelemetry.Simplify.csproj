@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+
+		<PackageId>OpenTelemetry.Simplify</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Doskhan Danebekov</Authors>
+		<Company>Doskhan Labs</Company>
+		<Product>OpenTelemetry Simplify for .NET</Product>
+		<Description>Unofficial helper library for .NET microservices to simplify metrics and tracing setup with OpenTelemetry. Supports Prometheus, OTLP, Console, Zipkin, and more.</Description>
+		<PackageTags>opentelemetry metrics tracing prometheus jaeger zipkin dotnet</PackageTags>
+		<RepositoryUrl>https://github.com/vf0x/OpenTelemetry.Simplify</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/vf0x/OpenTelemetry.Simplify</PackageProjectUrl>
+		<PackageIcon>icon.png</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.3" />
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.3" />
+		<PackageReference Include="OpenTelemetry" Version="1.11.2" />
+		<PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.11.2" />
+		<PackageReference Include="OpenTelemetry.Exporter.Jaeger" Version="1.5.1" />
+		<PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.11.2" />
+		<PackageReference Include="OpenTelemetry.Exporter.Prometheus.AspNetCore" Version="1.11.2-beta.1" />
+		<PackageReference Include="OpenTelemetry.Exporter.Zipkin" Version="1.11.2" />
+		<PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.11.2" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.11.1" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.11.1" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.Runtime" Version="1.11.1" />
+		<PackageReference Include="Oracle.ManagedDataAccess.OpenTelemetry" Version="23.8.0" />
+		<PackageReference Include="System.Diagnostics.DiagnosticSource" Version="9.0.4" />
+		<None Include="icon.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+</Project>

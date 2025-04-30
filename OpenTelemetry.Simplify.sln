@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C78286E2-26B8-4DC8-89B6-AF3F55D65CD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTelemetry.Simplify", "src\OpenTelemetry.Simplify\OpenTelemetry.Simplify.csproj", "{29AF8E0A-9970-4F24-B02B-53D84B3C3E2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{A6C3767C-CCF6-40CB-A157-33E132970523}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTelemetry.Simplify.Example", "examples\OpenTelemetry.Simplify.Example\OpenTelemetry.Simplify.Example.csproj", "{8E3F11CC-7556-4CC5-8F27-097D6D257494}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29AF8E0A-9970-4F24-B02B-53D84B3C3E2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29AF8E0A-9970-4F24-B02B-53D84B3C3E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29AF8E0A-9970-4F24-B02B-53D84B3C3E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29AF8E0A-9970-4F24-B02B-53D84B3C3E2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E3F11CC-7556-4CC5-8F27-097D6D257494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E3F11CC-7556-4CC5-8F27-097D6D257494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E3F11CC-7556-4CC5-8F27-097D6D257494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E3F11CC-7556-4CC5-8F27-097D6D257494}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{29AF8E0A-9970-4F24-B02B-53D84B3C3E2C} = {C78286E2-26B8-4DC8-89B6-AF3F55D65CD8}
+		{8E3F11CC-7556-4CC5-8F27-097D6D257494} = {A6C3767C-CCF6-40CB-A157-33E132970523}
+	EndGlobalSection
+EndGlobal
